@@ -1,0 +1,20 @@
+appId: com.liwei.strata-code
+productName: Strata Code
+directories:
+  buildResources: build
+  output: release
+files:
+  - out/**
+  - "!**/.DS_Store"
+# SDK 拉起嵌入式运行时（原生二进制）—— child_process 无法从 asar 内 exec
+asarUnpack:
+  - "**/node_modules/@anthropic-ai/claude-agent-sdk/**"
+  - "**/node_modules/@anthropic-ai/sdk/**"
+  - "**/*.node"
+mac:
+  target:
+    - target: arm64
+      arch: arm64
+  category: public.app-category.developer-tools
+  # 开发打包跳过签名（发布时配置 CSC_NAME 或公证流程）
+  identity: null

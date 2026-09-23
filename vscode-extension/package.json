@@ -1,0 +1,51 @@
+{
+  "name": "claude-sdk-agent-vscode",
+  "displayName": "Claude SDK Agent",
+  "description": "Claude SDK Agent sidebar for VSCode — talks to the local Electron runtime via HTTP + SSE.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onView:claude-sdk-agent.sidebar"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "claude-sdk-agent-container",
+          "title": "Claude Agent",
+          "icon": "$(robot)"
+        }
+      ]
+    },
+    "views": {
+      "claude-sdk-agent-container": [
+        {
+          "id": "claude-sdk-agent.sidebar",
+          "name": "Chat",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "claude-sdk-agent.openChat",
+        "title": "Open Claude Agent Chat"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -p . -w",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.5",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
