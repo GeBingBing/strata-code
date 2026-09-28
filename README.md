@@ -1,5 +1,22 @@
 # Strata Code
 
+<p align="left">
+  <a href="https://github.com/GeBingBing/strata-code/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/GeBingBing/strata-code/ci.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white&label=CI"></a>
+  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/github/license/GeBingBing/strata-code?style=flat-square&color=blue"></a>
+  <a href="https://github.com/GeBingBing/strata-code/releases"><img alt="Release" src="https://img.shields.io/github/v/release/GeBingBing/strata-code?style=flat-square&color=success"></a>
+  <a href="https://github.com/GeBingBing/strata-code/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/GeBingBing/strata-code?style=flat-square&color=yellow"></a>
+  <a href="https://github.com/GeBingBing/strata-code/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/GeBingBing/strata-code?style=flat-square&color=lightgrey"></a>
+</p>
+
+<p align="left">
+  <img alt="Electron" src="https://img.shields.io/badge/Electron-44-47848F?logo=electron&logoColor=white&style=flat-square">
+  <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black&style=flat-square">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white&style=flat-square">
+  <img alt="Claude Agent SDK" src="https://img.shields.io/badge/Claude_Agent_SDK-0.3-D97757?logo=anthropic&logoColor=white&style=flat-square">
+  <img alt="Vitest" src="https://img.shields.io/badge/Vitest-4-6E9F18?logo=vitest&logoColor=white&style=flat-square">
+  <img alt="Platform" src="https://img.shields.io/badge/macOS-arm64-lightgrey?style=flat-square&logo=apple&logoColor=white">
+</p>
+
 > **Cursor's anatomy, open source.** A desktop AI coding assistant built on the
 > [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-typescript) —
 > with layered memory, multi‑workspace, and interruptible streaming.
@@ -165,3 +182,15 @@ tests/                       # vitest (main node) + vitest (renderer jsdom) + e2
 
 - Built on the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-typescript) by Anthropic
 - Inspired by the UX of Cursor and Claude Code
+
+---
+
+<p align="center">
+  <sub>If Strata Code makes your work easier, consider giving it a <strong>⭐ star</strong> — it helps others find it.</sub>
+</p>
+
+<p align="center">
+  <a href="https://github.com/GeBingBing"><img alt="Author" src="https://img.shields.io/badge/author-@GeBingBing-blue?style=flat-square&logo=github"></a>
+  <a href="https://github.com/GeBingBing/strata-code/issues/new"><img alt="Report a bug" src="https://img.shields.io/badge/-Report%20a%20bug-red?style=flat-square&logo=github"></a>
+  <a href="https://github.com/GeBingBing/strata-code/issues/new"><img alt="Request a feature" src="https://img.shields.io/badge/-Request%20a%20feature-green?style=flat-square&logo=github"></a>
+</p>

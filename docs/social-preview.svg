@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="60%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="strata1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97757"/>
+      <stop offset="100%" stop-color="#cc785c"/>
+    </linearGradient>
+    <linearGradient id="strata2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7d8590"/>
+      <stop offset="100%" stop-color="#8b949e"/>
+    </linearGradient>
+    <linearGradient id="strata3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3fb950"/>
+      <stop offset="100%" stop-color="#2ea043"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#d97757"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- Subtle dot grid -->
+  <g opacity="0.15" fill="#58a6ff">
+    <circle cx="60" cy="60" r="1"/><circle cx="120" cy="60" r="1"/><circle cx="180" cy="60" r="1"/>
+    <circle cx="60" cy="120" r="1"/><circle cx="120" cy="120" r="1"/><circle cx="180" cy="120" r="1"/>
+    <circle cx="1220" cy="580" r="1"/><circle cx="1160" cy="580" r="1"/><circle cx="1100" cy="580" r="1"/>
+    <circle cx="1220" cy="520" r="1"/><circle cx="1160" cy="520" r="1"/><circle cx="1100" cy="520" r="1"/>
+  </g>
+
+  <!-- Left typography block -->
+  <g transform="translate(80, 200)">
+    <!-- Eyebrow tag -->
+    <rect x="0" y="-60" width="170" height="32" rx="16" fill="none" stroke="#d97757" stroke-width="1.5"/>
+    <text x="85" y="-39" font-family="-apple-system, 'SF Pro Display', system-ui, sans-serif" font-size="14" font-weight="600" fill="#d97757" text-anchor="middle" letter-spacing="2">DESKTOP · AI</text>
+
+    <!-- Title -->
+    <text x="0" y="60" font-family="-apple-system, 'SF Pro Display', 'Inter', system-ui, sans-serif" font-size="112" font-weight="800" fill="url(#titleGrad)" letter-spacing="-3">Strata Code</text>
+
+    <!-- Tagline -->
+    <text x="0" y="130" font-family="-apple-system, 'SF Pro Display', system-ui, sans-serif" font-size="28" font-weight="500" fill="#e6edf3">Cursor's anatomy, open source.</text>
+
+    <!-- Sub -->
+    <text x="0" y="180" font-family="-apple-system, 'SF Pro Display', system-ui, sans-serif" font-size="22" font-weight="400" fill="#7d8590">Layered memory · Multi-workspace · Interruptible streams</text>
+
+    <!-- Bottom attribution -->
+    <text x="0" y="280" font-family="-apple-system, 'SF Pro Display', system-ui, sans-serif" font-size="18" font-weight="500" fill="#58a6ff">⚡ Built on the Claude Agent SDK</text>
+    <text x="0" y="310" font-family="-apple-system, 'SF Pro Display', system-ui, sans-serif" font-size="16" font-weight="400" fill="#7d8590">Electron + React + TypeScript · MIT · macOS arm64</text>
+  </g>
+
+  <!-- Right visual: 3 strata (memory layers) -->
+  <g transform="translate(740, 100)">
+    <text x="240" y="0" font-family="-apple-system, 'SF Mono', monospace" font-size="14" font-weight="600" fill="#7d8590" text-anchor="middle" letter-spacing="2">THREE-LAYER MEMORY</text>
+
+    <!-- Stratum 1: MemoryStore -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="480" height="100" rx="12" fill="#d97757" opacity="0.15"/>
+      <rect x="0" y="0" width="480" height="100" rx="12" fill="none" stroke="url(#strata1)" stroke-width="2"/>
+      <circle cx="32" cy="50" r="10" fill="url(#strata1)"/>
+      <text x="60" y="42" font-family="-apple-system, 'SF Mono', monospace" font-size="20" font-weight="700" fill="#e6edf3">MemoryStore</text>
+      <text x="60" y="68" font-family="-apple-system, 'SF Mono', monospace" font-size="13" fill="#7d8590">userData/memory.json · atomic writes</text>
+      <text x="60" y="86" font-family="-apple-system, 'SF Mono', monospace" font-size="13" fill="#7d8590">preference · fact · lesson · skill</text>
+    </g>
+
+    <!-- Stratum 2: MemoryInjector -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="480" height="100" rx="12" fill="#8b949e" opacity="0.15"/>
+      <rect x="0" y="0" width="480" height="100" rx="12" fill="none" stroke="url(#strata2)" stroke-width="2"/>
+      <circle cx="32" cy="50" r="10" fill="url(#strata2)"/>
+      <text x="60" y="42" font-family="-apple-system, 'SF Mono', monospace" font-size="20" font-weight="700" fill="#e6edf3">MemoryInjector</text>
+      <text x="60" y="68" font-family="-apple-system, 'SF Mono', monospace" font-size="13" fill="#7d8590">scope filter → score → cap</text>
+      <text x="60" y="86" font-family="-apple-system, 'SF Mono', monospace" font-size="13" fill="#7d8590">systemPrompt.append · memory:recalled</text>
+    </g>
+
+    <!-- Stratum 3: MemoryDistiller -->
+    <g transform="translate(0, 270)">
+      <rect x="0" y="0" width="480" height="100" rx="12" fill="#3fb950" opacity="0.15"/>
+      <rect x="0" y="0" width="480" height="100" rx="12" fill="none" stroke="url(#strata3)" stroke-width="2"/>
+      <circle cx="32" cy="50" r="10" fill="url(#strata3)"/>
+      <text x="60" y="42" font-family="-apple-system, 'SF Mono', monospace" font-size="20" font-weight="700" fill="#e6edf3">MemoryDistiller</text>
+      <text x="60" y="68" font-family="-apple-system, 'SF Mono', monospace" font-size="13" fill="#7d8590">post-session side-query · maxTurns: 1</text>
+      <text x="60" y="86" font-family="-apple-system, 'SF Mono', monospace" font-size="13" fill="#7d8590">isolated · log-and-stop · merge + prune</text>
+    </g>
+  </g>
+</svg>
